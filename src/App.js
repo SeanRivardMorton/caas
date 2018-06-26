@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from './components/Header'
-
-		import MainArea from './components/MainArea'
-import Footer from './components/Footer'
+import Header from './components/Header';
+import MainArea from './components/MainArea';
+import Footer from './components/Footer';
+import SideBar from './components/SideBar';
 import './App.css';
 
 class App extends Component {
@@ -10,8 +10,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-		<MainArea />
-		<Footer />
+        <div className="main">
+          <SideBar />
+          <MainArea />
+        </div>
+        <Footer />
       </div>
     );
   }
